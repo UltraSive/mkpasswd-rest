@@ -3,7 +3,7 @@ import subprocess
 
 app = Flask(__name__)
 
-@app.route('/mkpasswd', methods=['POST'])
+@app.route('/', methods=['POST'])
 def hash_password():
     try:
         # Get JSON request data
